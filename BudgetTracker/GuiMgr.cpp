@@ -2,17 +2,39 @@
 
 GuiMgr::GuiMgr() {}
 
-void GuiMgr::SetAsExpense (double expense)
+void GuiMgr::SetAsExpense (QString expense)
 {
-    BudgetPtr->SetAsExpense(expense);
+    double input = ConvertQStringToDouble(expense);
+    BudgetPtr->SetAsExpense(input);
 }
 
-void GuiMgr::SetAsIncome (double income)
+void GuiMgr::SetAsIncome (QString income)
 {
-    BudgetPtr->SetAsExpense(income);
+    double input = ConvertQStringToDouble(income);
+    BudgetPtr->SetAsIncome(input);
 }
 
-double GuiMgr::GetBudget()
+QString GuiMgr::GetBudget()
 {
-    return BudgetPtr->GetBudget();
+    QString str = QString::number(BudgetPtr->GetBudget());
+    return str;
+}
+
+double GuiMgr::ConvertQStringToDouble(QString string)
+{
+    bool ok;
+    double value = string.toDouble(&ok);
+
+    if (ok) {
+        return value;
+    } else {
+        return 0;
+    }
+}
+
+QString GuiMgr::ConvertDoubleToQString(double input)
+{
+    QString str = QString::number(input);
+
+    return str;
 }

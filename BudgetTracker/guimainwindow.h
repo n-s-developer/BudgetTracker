@@ -2,6 +2,7 @@
 #define GUIMAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMessageBox>
 
 #include "GuiMgrIfc.h"
 #include "GuiMgr.h"
@@ -20,8 +21,12 @@ public:
     GuiMainWindow(QWidget *parent = nullptr);
     ~GuiMainWindow();
 
+private slots:
+    void on_pushButtonUpdateBudget_clicked();
+
 private:
     Ui::GuiMainWindow *ui;
     GuiMgrIfc* GuiPtr = new GuiMgr();
+    void ErrorPopUp(int hataMesaji);
 };
 #endif // GUIMAINWINDOW_H

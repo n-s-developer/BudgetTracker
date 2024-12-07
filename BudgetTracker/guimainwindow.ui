@@ -14,7 +14,7 @@
    <string>GuiMainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lineEditBudgetInput">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -24,7 +24,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="radioButtonExpense">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -37,7 +37,7 @@
      <string>Harcama</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="radioButtonIncome">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -50,7 +50,7 @@
      <string>Gelir</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButtonUpdateBudget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -61,6 +61,32 @@
     </property>
     <property name="text">
      <string>Güncelle</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelConstBudget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Güncel Bütçe: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelBudget">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
