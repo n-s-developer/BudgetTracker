@@ -27,7 +27,7 @@
    <widget class="QRadioButton" name="radioButtonExpense">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>130</x>
       <y>200</y>
       <width>89</width>
       <height>20</height>
@@ -40,7 +40,7 @@
    <widget class="QRadioButton" name="radioButtonIncome">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>20</x>
       <y>200</y>
       <width>89</width>
       <height>20</height>
@@ -48,6 +48,9 @@
     </property>
     <property name="text">
      <string>Gelir</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonUpdateBudget">

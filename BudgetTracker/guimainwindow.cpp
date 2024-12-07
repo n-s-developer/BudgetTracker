@@ -17,27 +17,21 @@ void GuiMainWindow::on_pushButtonUpdateBudget_clicked()
 {
     QString str = ui->lineEditBudgetInput->text();
 
-    if (ui->radioButtonExpense->isChecked() == true)
+    if (str.isEmpty() == false)
     {
-        GuiPtr->SetAsExpense(str);
-    }
-    else if (ui->radioButtonIncome->isChecked() == true)
-    {
-        GuiPtr->SetAsIncome(str);
-    }
-
-    ui->labelBudget->setText(GuiPtr->GetBudget());
-}
-
-void GuiMainWindow::ErrorPopUp(int hataMesaji)
-{
-    switch (hataMesaji)
-    {
-        case 0:
+        if (ui->radioButtonExpense->isChecked() == true)
         {
-            QMessageBox::information(this, "ERROR", "INVALID ENTRY");
-            break;
+            GuiPtr->SetAsExpense(str);
         }
-    }
+        else if (ui->radioButtonIncome->isChecked() == true)
+        {
+            GuiPtr->SetAsIncome(str);
+        }
 
+        ui->labelBudget->setText(GuiPtr->GetBudget());
+    }
+    else
+    {
+        QMessageBox::information(this, "ERROR", "INPUT CANNOT BE EMPTY!");
+    }
 }

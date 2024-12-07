@@ -27,6 +27,6 @@ private slots:
 private:
     Ui::GuiMainWindow *ui;
     GuiMgrIfc* GuiPtr = new GuiMgr();
-    void ErrorPopUp(int hataMesaji);
+
 };
 #endif // GUIMAINWINDOW_H
