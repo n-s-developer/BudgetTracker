@@ -16,3 +16,8 @@ double BudgetMgr::GetBudget()
 {
     return TotalBudget;
 }
+
+void BudgetMgr::ResetBudget()
+{
+    TotalBudget = 0;
+}
