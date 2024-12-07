@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "GuiMgrIfc.h"
+#include "GuiMgr.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class GuiMainWindow;
@@ -19,5 +22,6 @@ public:
 
 private:
     Ui::GuiMainWindow *ui;
+    GuiMgrIfc* GuiPtr = new GuiMgr();
 };
 #endif // GUIMAINWINDOW_H

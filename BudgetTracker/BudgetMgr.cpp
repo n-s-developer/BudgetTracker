@@ -1,6 +1,5 @@
 #include "BudgetMgr.h"
 
-// Constructure
 BudgetMgr::BudgetMgr() {}
 
 void BudgetMgr::SetAsExpense (double expense)

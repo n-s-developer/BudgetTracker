@@ -12,6 +12,7 @@ SOURCES += \
     BudgetMgr.cpp \
     BudgetMgrIfc.cpp \
     GuiMgr.cpp \
+    GuiMgrIfc.cpp \
     main.cpp \
     guimainwindow.cpp
 
@@ -19,6 +20,7 @@ HEADERS += \
     BudgetMgr.h \
     BudgetMgrIfc.h \
     GuiMgr.h \
+    GuiMgrIfc.h \
     guimainwindow.h
 
 FORMS += \
