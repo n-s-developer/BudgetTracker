@@ -10,17 +10,21 @@ CONFIG += c++17
 
 SOURCES += \
     BudgetMgrCls.cpp \
+    BudgetObserverCls.cpp \
     ObserverIfc.cpp \
     RecurringTransactionCls.cpp \
     TransactionCls.cpp \
+    TransactionFactoryCls.cpp \
     main.cpp \
     guimainwindow.cpp
 
 HEADERS += \
     BudgetMgrCls.h \
+    BudgetObserverCls.h \
     ObserverIfc.h \
     RecurringTransactionCls.h \
     TransactionCls.h \
+    TransactionFactoryCls.h \
     guimainwindow.h
 
 FORMS += \

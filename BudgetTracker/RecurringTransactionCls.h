@@ -8,10 +8,12 @@ class RecurringTransactionCls: public TransactionCls
 {
 public:
     RecurringTransactionCls();
-    void CalculateNextDate();
+    RecurringTransactionCls(double amount, const QString& description, int interval);
 
-    int RecurrenceInterval;
-    QDate NextDate;
+    int GetInterval() const;
+
+private:
+    int Interval;
 };
 
 #endif // RECURRINGTRANSACTIONCLS_H

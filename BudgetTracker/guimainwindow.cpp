@@ -36,12 +36,3 @@ void GuiMainWindow::on_pushButtonUpdateBudget_clicked()
     }
 }
 
-void GuiMainWindow::UpdateBalance(double balance)
-{
-    ui->labelBalance->setText(QString::number(balance));
-}
-
-void GuiMainWindow::SetupBudget(BudgetMgrCls* budget)
-{
-    budget->AddObserver(this);  // Observer olarak ekle
-}

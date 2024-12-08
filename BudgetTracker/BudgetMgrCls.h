@@ -32,6 +32,7 @@ public:
     void SetIncome(double balance);
     void SetExpense(double balance);
     void CalculateBalance();
+    void ResetBudget();
 
 };
 

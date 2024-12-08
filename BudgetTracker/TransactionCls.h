@@ -7,11 +7,14 @@ class TransactionCls
 {
 public:
     TransactionCls();
-    QString GetDetails();
+    TransactionCls(double amount, const QString& description);
 
-    QString Description;
+    double GetAmount() const;
+    QString GetDescription() const;
+
+protected:
     double Amount;
-    QString Type;
+    QString Description;
 };
 
 #endif // TRANSACTIONCLS_H

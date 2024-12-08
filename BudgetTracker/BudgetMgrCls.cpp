@@ -50,3 +50,8 @@ void BudgetMgrCls::CalculateBalance()
 {
     Balance = Income - Expense;
 }
+
+void BudgetMgrCls::ResetBudget()
+{
+
+}
