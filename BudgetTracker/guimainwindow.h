@@ -3,8 +3,7 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
-#include <ObserverIfc.h>
-#include <BudgetMgrCls.h>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

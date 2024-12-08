@@ -2,9 +2,11 @@
 #define BUDGETMGRCLS_H
 
 #include <vector>
-#include "BudgetMgrIfc.h"
-#include <ObserverIfc.h>
 #include <algorithm>
+
+#include "ObserverIfc.h"
+#include "UIObserverCls.h"
+#include "BudgetObserverCls.h"
 
 class BudgetMgrCls
 {
@@ -28,6 +30,8 @@ public:
 
     // ObserverArr içerisindeki elemanlare bildirim gönderir.
     void NotifyObservers();
+
+    void SetupBudget();
 
     void SetIncome(double balance);
     void SetExpense(double balance);

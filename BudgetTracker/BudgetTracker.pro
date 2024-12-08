@@ -15,6 +15,7 @@ SOURCES += \
     RecurringTransactionCls.cpp \
     TransactionCls.cpp \
     TransactionFactoryCls.cpp \
+    UIObserverCls.cpp \
     main.cpp \
     guimainwindow.cpp
 
@@ -25,6 +26,7 @@ HEADERS += \
     RecurringTransactionCls.h \
     TransactionCls.h \
     TransactionFactoryCls.h \
+    UIObserverCls.h \
     guimainwindow.h
 
 FORMS += \

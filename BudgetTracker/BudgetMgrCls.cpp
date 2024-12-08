@@ -55,3 +55,9 @@ void BudgetMgrCls::ResetBudget()
 {
 
 }
+
+void BudgetMgrCls::SetupBudget() {
+    // Bu işlev gözlemci eklemek için her iki sınıfın da çağırabileceği bir fonksiyon olarak tanımlanabilir
+    // AddObserver fonksiyonu çağrılır
+    // Başka gerekli işlemler eklenebilir
+}

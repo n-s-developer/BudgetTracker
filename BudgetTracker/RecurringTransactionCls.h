@@ -1,8 +1,8 @@
 #ifndef RECURRINGTRANSACTIONCLS_H
 #define RECURRINGTRANSACTIONCLS_H
 
-#include <TransactionCls.h>
-#include <QDate>
+#include <QString>
+#include "TransactionCls.h"
 
 class RecurringTransactionCls: public TransactionCls
 {

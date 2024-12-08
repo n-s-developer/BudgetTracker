@@ -1,3 +1,6 @@
 #include "ObserverIfc.h"
 
-ObserverIfc::ObserverIfc() {}
+ObserverIfc::ObserverIfc()
+{
+
+}

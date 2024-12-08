@@ -1,6 +1,7 @@
 #ifndef OBSERVERIFC_H
 #define OBSERVERIFC_H
 
+
 class ObserverIfc
 {
 public:
