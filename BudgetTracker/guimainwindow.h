@@ -5,7 +5,7 @@
 #include <QMessageBox>
 
 #include "GuiMgrIfc.h"
-#include "GuiMgr.h"
+#include "GuiMgrCls.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -26,7 +26,7 @@ private slots:
 
 private:
     Ui::GuiMainWindow *ui;
-    GuiMgrIfc* GuiPtr = new GuiMgr();
+    GuiMgrIfc* GuiPtr = new GuiMgrCls();
 
 };
 #endif // GUIMAINWINDOW_H

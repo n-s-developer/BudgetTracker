@@ -1,17 +1,18 @@
-#ifndef BUDGETMGR_H
-#define BUDGETMGR_H
+#ifndef BUDGETMGRCLS_H
+#define BUDGETMGRCLS_H
 
 #include "BudgetMgrIfc.h"
 
-class BudgetMgr: public BudgetMgrIfc
+class BudgetMgrCls: public BudgetMgrIfc
 {
 public:
-    BudgetMgr();
+    BudgetMgrCls();
     virtual void SetAsExpense (double expense);
     virtual void SetAsIncome (double income);
     virtual double GetBudget();
+    virtual void ResetBudget();
 
     double TotalBudget;
 };
 
-#endif // BUDGETMGR_H
+#endif // BUDGETMGRCLS_H

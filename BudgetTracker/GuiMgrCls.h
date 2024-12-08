@@ -1,26 +1,26 @@
-#ifndef GUIMGR_H
-#define GUIMGR_H
+#ifndef GUIMGRCLS_H
+#define GUIMGRCLS_H
 
 #include <QString>
 
 #include "BudgetMgrIfc.h"
-#include "BudgetMgr.h"
+#include "BudgetMgrCls.h"
 
 #include "GuiMgrIfc.h"
 
-class GuiMgr: public GuiMgrIfc
+class GuiMgrCls: public GuiMgrIfc
 {
 public:
-    GuiMgr();
+    GuiMgrCls();
     virtual void SetAsExpense (QString expense);
     virtual void SetAsIncome (QString income);
     virtual QString GetBudget();
 
 private:
-    BudgetMgrIfc* BudgetPtr = new BudgetMgr();
+    BudgetMgrIfc* BudgetPtr = new BudgetMgrCls();
 
     double ConvertQStringToDouble(QString string);
     QString ConvertDoubleToQString(double value);
 };
 
-#endif // GUIMGR_H
+#endif // GUIMGRCLS_H

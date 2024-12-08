@@ -1,26 +1,26 @@
-#include "GuiMgr.h"
+#include "GuiMgrCls.h"
 
-GuiMgr::GuiMgr() {}
+GuiMgrCls::GuiMgrCls() {}
 
-void GuiMgr::SetAsExpense (QString expense)
+void GuiMgrCls::SetAsExpense (QString expense)
 {
     double input = ConvertQStringToDouble(expense);
     BudgetPtr->SetAsExpense(input);
 }
 
-void GuiMgr::SetAsIncome (QString income)
+void GuiMgrCls::SetAsIncome (QString income)
 {
     double input = ConvertQStringToDouble(income);
     BudgetPtr->SetAsIncome(input);
 }
 
-QString GuiMgr::GetBudget()
+QString GuiMgrCls::GetBudget()
 {
     QString str = QString::number(BudgetPtr->GetBudget());
     return str;
 }
 
-double GuiMgr::ConvertQStringToDouble(QString string)
+double GuiMgrCls::ConvertQStringToDouble(QString string)
 {
     bool ok;
     double value = string.toDouble(&ok);
@@ -32,7 +32,7 @@ double GuiMgr::ConvertQStringToDouble(QString string)
     }
 }
 
-QString GuiMgr::ConvertDoubleToQString(double input)
+QString GuiMgrCls::ConvertDoubleToQString(double input)
 {
     QString str = QString::number(input);
 
