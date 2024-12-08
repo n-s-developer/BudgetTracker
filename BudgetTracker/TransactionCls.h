@@ -7,6 +7,11 @@ class TransactionCls
 {
 public:
     TransactionCls();
+    QString GetDetails();
+
+    QString Description;
+    double Amount;
+    QString Type;
 };
 
 #endif // TRANSACTIONCLS_H
