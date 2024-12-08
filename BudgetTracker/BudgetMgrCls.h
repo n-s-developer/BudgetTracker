@@ -3,16 +3,16 @@
 
 #include "BudgetMgrIfc.h"
 
-class BudgetMgrCls: public BudgetMgrIfc
+class BudgetMgrCls
 {
 public:
     BudgetMgrCls();
-    virtual void SetAsExpense (double expense);
-    virtual void SetAsIncome (double income);
-    virtual double GetBudget();
-    virtual void ResetBudget();
+    void calculateBalance();
+    void ResetBudget();
 
-    double TotalBudget;
+    double Income;
+    double Expense;
+    double Balance;
 };
 
 #endif // BUDGETMGRCLS_H

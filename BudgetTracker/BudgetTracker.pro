@@ -10,17 +10,13 @@ CONFIG += c++17
 
 SOURCES += \
     BudgetMgrCls.cpp \
-    BudgetMgrIfc.cpp \
-    GuiMgrCls.cpp \
-    GuiMgrIfc.cpp \
+    TransactionCls.cpp \
     main.cpp \
     guimainwindow.cpp
 
 HEADERS += \
     BudgetMgrCls.h \
-    BudgetMgrIfc.h \
-    GuiMgrCls.h \
-    GuiMgrIfc.h \
+    TransactionCls.h \
     guimainwindow.h
 
 FORMS += \

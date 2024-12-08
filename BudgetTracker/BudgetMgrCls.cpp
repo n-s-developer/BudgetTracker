@@ -1,7 +1,7 @@
 #include "BudgetMgrCls.h"
 
 BudgetMgrCls::BudgetMgrCls() {}
-
+/*
 void BudgetMgrCls::SetAsExpense (double expense)
 {
     TotalBudget -= expense;
@@ -21,3 +21,4 @@ void BudgetMgrCls::ResetBudget()
 {
     TotalBudget = 0;
 }
+*/

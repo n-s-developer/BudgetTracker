@@ -21,14 +21,14 @@ void GuiMainWindow::on_pushButtonUpdateBudget_clicked()
     {
         if (ui->radioButtonExpense->isChecked() == true)
         {
-            GuiPtr->SetAsExpense(str);
+            // GuiPtr->SetAsExpense(str);
         }
         else if (ui->radioButtonIncome->isChecked() == true)
         {
-            GuiPtr->SetAsIncome(str);
+            // GuiPtr->SetAsIncome(str);
         }
 
-        ui->labelBudget->setText(GuiPtr->GetBudget());
+        // ui->labelBudget->setText(GuiPtr->GetBudget());
     }
     else
     {
